@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)file:///C:/Users/Alex/Dropbox/PC2/Documents/examenesGit/surso%20de%20css%20y%20html/platzi.com.html -->
+<html lang="es" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                                        
+          <meta name="robots" content="noindex, nofollow">
+          
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="referrer" content="no-referrer-when-downgrade">
+            
+            <link href="{{ asset('./iztlapcom_files/styles.css') }}"  rel="stylesheet" integrity="sha384-sfnEuX/m3Dn3o9arS6KAZ6062Ky0q4v6BXlW2VC6jTNrbX4wqqlsWbNgtUzT6P5E" crossorigin="anonymous" />
+            <link href="{{ asset('./iztlapcom_files/vendors.93ef55e2b3d9ca1563fd.css') }}"  rel="stylesheet"  type="text/css" />
+            <link href="{{ asset('./iztlapcom_files/dlls.93ef55e2b3d9ca1563fd.css') }}"  rel="stylesheet"  type="text/css" />
+            <link href="{{ asset('./iztlapcom_files/exam-summary.93ef55e2b3d9ca1563fd.css') }}"  rel="stylesheet"  type="text/css" />
+        </head>
+        <body>
+        <div id="exam-summary"><div class="BaseLayout"><div class="Modal"><div class="Modal-wrapper"></div></div><div class="Modal">
+        </div><div class="ResultsOverview">
+          {% for examen in examenes %}
+            {{ examen.html | raw }}
+          {% endfor %}
+        </div>
+      </div></div>
+  </body></html>
