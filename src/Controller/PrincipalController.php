@@ -28,6 +28,7 @@ class PrincipalController extends AbstractController
         $entityManager->flush();
 
         //var_dump($exa); die;
+        header('Access-Control-Allow-Origin: *');
         $response = new JsonResponse(array(
             'exito'=>1,
             'mensaje'=>'gracias maitro :")'
