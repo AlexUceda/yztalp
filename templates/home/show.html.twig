@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0099)file:///C:/Users/Alex/Dropbox/PC2/Documents/examenesGit/surso%20de%20css%20y%20html/platzi.com.html -->
+
 <html lang="es" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
                                         
           <meta name="robots" content="noindex, nofollow">
@@ -13,7 +13,9 @@
             <link href="{{ asset('./iztlapcom_files/exam-summary.93ef55e2b3d9ca1563fd.css') }}"  rel="stylesheet"  type="text/css" />
         </head>
         <body>
-        <div id="exam-summary"><div class="BaseLayout"><div class="Modal"><div class="Modal-wrapper"></div></div><div class="Modal">
+        <div id="exam-summary"><div class="BaseLayout" style="
+    display: none;
+"><!-- yatu sabe --><div class="Modal"><div class="Modal-wrapper"></div></div><div class="Modal">
         </div><div class="ResultsOverview">
           {% for examen in examenes %}
             {{ examen.html | raw }}
